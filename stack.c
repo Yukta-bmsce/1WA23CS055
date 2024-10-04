@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX 100
+#define MAX 5
 
 void push(int stack[], int *top);
 void pop(int stack[], int *top);
