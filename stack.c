@@ -36,8 +36,7 @@ int main() {
                 printf("Enter a valid choice.\n");
         }
     } while (1);
-
-    return 0;
+return 0;
 }
 
 void push(int stack[], int *top) {
