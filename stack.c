@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #define MAX 100
 
 void push(int stack[], int *top);
@@ -31,7 +30,7 @@ int main() {
                 display(stack, top);
                 break;
             case 4:
-                printf("Exiting...\n");
+                printf("Exiting\n");
                 return 0;
             default:
                 printf("Enter a valid choice.\n");
@@ -43,7 +42,7 @@ int main() {
 
 void push(int stack[], int *top) {
     if (*top >= MAX - 1) {
-        printf("\nOverflow: Stack is full.\n");
+        printf("\nOverflow has occured.\n");
     } else {
         int element;
         printf("Enter element: ");
@@ -56,7 +55,7 @@ void push(int stack[], int *top) {
 
 void pop(int stack[], int *top) {
     if (*top == -1) {
-        printf("Underflow: Stack is empty.\n");
+        printf("Underflow has occured.\n");
     } else {
         int poppedElement = stack[*top];
         (*top)--;
