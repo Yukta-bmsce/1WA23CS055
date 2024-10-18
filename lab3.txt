@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
 #define Max 100
 
 char st[Max];
@@ -81,15 +80,12 @@ void InfixtoPostfix(char source[], char target[]) {
 
 int main() {
     char infix[100], postfix[100];
-
     printf("Enter infix expression: ");
     fgets(infix, sizeof(infix), stdin);
     infix[strcspn(infix, "\n")] = 0;
-
     InfixtoPostfix(infix, postfix);
     printf("The corresponding postfix expression is: ");
     puts(postfix);
-
     return 0;
 }
 
